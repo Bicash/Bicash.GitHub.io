@@ -392,3 +392,18 @@ h5.title {
 	margin-top: 0;
 	margin-left: 365px;
 }
+.preloader{
+	position: fixed;
+	background-color: #3b3232;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9999;
+}
+.preloader > div{
+	position: relative;
+	left: 50%;
+	top: 50vh;
+	margin: -100px 0 0 -100px;
+}

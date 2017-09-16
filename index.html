@@ -5,9 +5,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<title>Верстка PSD</title>
 	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="loading.css"/>
 	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 </head>
 <body>
+	<div class="preloader">
+		<div>
+			<img src="img/Ellipsis.svg" alt="" />
+		</div>
+	</div>
 	<div id="wrapper">
 		<div id="header">
 			<div class="container clearfix">
@@ -237,6 +243,11 @@
 		//анимируем переход на расстояние - top за 1500 мс
 		$('body,html').animate({scrollTop: top}, 500);
 		});
+		});
+	</script>
+	<script>
+		$(window).on('load', function(){
+			$('.preloader').delay(1000).fadeOut('slow');
 		});
 	</script>
 </body>
